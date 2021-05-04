@@ -1,0 +1,18 @@
+.cart-overlay {
+  position: absolute;
+  background: #000000a8;
+  height: 100vh;
+  border: 2px solid lightgray;
+  right: 0;
+  border-top: none;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  .cart {
+    background: #fff;
+    width: 300px;
+    
+  }
+}

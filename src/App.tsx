@@ -13,11 +13,17 @@ import ProductPage from "./Pages/ProductPage";
 // 
 import "./assets/css/main.scss";
 import Navigation from "./components/Navigation";
+import Cart from "./components/Cart";
+import { usePulse } from "pulse-framework";
+import core from "./core";
 
 const App = () => {
+  const showCart = usePulse(core.controllers.cart.state.showCart);
+
   return (
     <div className="App">
       <Navigation />
+      {showCart && <Cart />}
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />

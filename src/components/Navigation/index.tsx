@@ -1,4 +1,5 @@
 import React from "react";
+import core from "../../core";
 import "./index.scss";
 
 const Navigation = () => {
@@ -10,7 +11,7 @@ const Navigation = () => {
         <li className="item">Product A</li>
         <li className="item">Product A</li>
       </ul>
-      <button className="btn">View Cart</button>
+      <button className="btn" onClick={() => core.controllers.cart.state.showCart.set(true)}>View Cart</button>
     </div>
   );
 }
