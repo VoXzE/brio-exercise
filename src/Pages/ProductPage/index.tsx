@@ -47,7 +47,7 @@ const ProductPage = () => {
           <div className="qty-info">
             <p>Quantity</p>
             <QuantityInput value={quantity} increment={incrementQty} decrement={decrementQty} onChange={setQuantity} />
-            <button className="blue-btn">Add to Cart</button>
+            <button className="blue-btn" onClick={() => core.controllers.cart.actions.addCartItem(product, quantity)}>Add to Cart</button>
           </div>
         </React.Fragment>
       }
