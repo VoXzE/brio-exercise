@@ -1,21 +1,21 @@
 import { usePulse } from "pulse-framework";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import core from "../../core";
 import CartItem from "../CartItem";
 import "./index.scss";
 
-const Cart = () => {
+const Cart: React.FunctionComponent = () => {
   const cartRef: any = useRef(null);
   const [total, setTotal] = useState(0);
   const cartItems = usePulse(core.controllers.cart.state.cart);
 
-  const calculateTotal = () => {
+  const calculateTotal = useCallback(() => {
     let sum = 0;
     for (const item of cartItems) {
-      sum += item.price;      
+      sum += item.price * item.quantity;      
     }
-    setTotal(sum);
-  }
+    setTotal(parseFloat(sum.toFixed(2)));
+  }, [cartItems]);
 
   useEffect(() => {
     // Lets calulate total price
@@ -29,7 +29,7 @@ const Cart = () => {
       }
     });
     return () => { document.removeEventListener("mousedown", () => {}) };
-  }, [cartRef]);
+  }, [cartRef, cartItems, calculateTotal]);
 
   return (
     <div className="cart-overlay">
@@ -38,7 +38,7 @@ const Cart = () => {
 
         <div className="cart-items">
           {cartItems && cartItems.map((item) => (
-            <CartItem item={item}/>
+            <CartItem item={item} key={item.productId} />
           ))}
         </div>
 

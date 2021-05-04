@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import "./index.scss";
 import core from "../../core";
 
-const ProductPage = () => {
+const ProductPage: React.FunctionComponent = () => {
   const { productId }: any = useParams();
   const [product, setProduct] = useState<ProductInfo | null>(null);
   const [quantity, setQuantity] = useState(0);

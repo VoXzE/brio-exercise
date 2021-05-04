@@ -8,7 +8,7 @@ interface QuantityInputProps {
   value: number;
 }
 
-const QuantityInput = ({ increment, decrement, onChange, value }: QuantityInputProps) => {
+const QuantityInput: React.FunctionComponent<QuantityInputProps> = ({ increment, decrement, onChange, value }: QuantityInputProps) => {
   return (
     <div className="qty-selector">
       <button className="qty-btn" onClick={decrement}>-</button>

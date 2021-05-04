@@ -2,7 +2,7 @@ import React from "react";
 import core from "../../core";
 import "./index.scss";
 
-const Navigation = () => {
+const Navigation: React.FunctionComponent = () => {
   return (
     <div className="navigation">
       <h1 className="logo">React Store</h1>

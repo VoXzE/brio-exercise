@@ -20,3 +20,16 @@ export const addCartItem = async (item: ProductInfo, quantity: number) => {
 	core.controllers.cart.state.cart.set(newArr)
 	console.log("Added item to cart!")
 }
+
+
+export const removeCartItem = async (productId: string) => {
+	const newArr = core.controllers.cart.state.cart.value;
+	const existsIndex = newArr.findIndex(e => e.productId === productId);
+
+	if (existsIndex !== -1) {
+		newArr.splice(existsIndex, 1);
+	}
+
+	core.controllers.cart.state.cart.set(newArr)
+	console.log("Removed item from !")
+}

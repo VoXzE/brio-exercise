@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomePage = () => {
+const HomePage: React.FunctionComponent = () => {
   return (
     <div className="home-page">
       Home Page

@@ -1,6 +1,6 @@
 import React from "react";
 
-const CheckoutPage = () => {
+const CheckoutPage: React.FunctionComponent = () => {
   return (
     <div className="checkout-page">
       Checkout Page
