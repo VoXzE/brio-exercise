@@ -5,17 +5,18 @@ import {
   Route,
 } from "react-router-dom";
 
+import { usePulse } from "pulse-framework";
+import core from "./core";
+
 // Components
 import CheckoutPage from "./Pages/CheckoutPage";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
-
-// 
-import "./assets/css/main.scss";
 import Navigation from "./components/Navigation";
 import Cart from "./components/Cart";
-import { usePulse } from "pulse-framework";
-import core from "./core";
+
+// Styles
+import "./assets/css/main.scss";
 
 const App = () => {
   const showCart = usePulse(core.controllers.cart.state.showCart);
