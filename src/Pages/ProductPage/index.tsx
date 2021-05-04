@@ -4,6 +4,7 @@ import data from "../../data/products.json";
 import { ProductInfo } from "../../types";
 import { useParams } from "react-router-dom";
 import "./index.scss";
+import core from "../../core";
 
 const ProductPage = () => {
   const { productId }: any = useParams();
@@ -34,7 +35,7 @@ const ProductPage = () => {
       
       {product &&
         <React.Fragment>
-          <h1 className="product-name">Product A</h1>
+          <h1 className="product-name">{product.name}</h1>
 
           <div className="main-info">
             <img src={product.image} alt="product-img" className="thumbnail" />
