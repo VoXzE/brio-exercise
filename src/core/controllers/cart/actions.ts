@@ -18,6 +18,7 @@ export const addCartItem = async (item: ProductInfo, quantity: number) => {
 	}
 	
 	core.controllers.cart.state.cart.set(newArr)
+	core.controllers.cart.state.showCart.set(true);
 	console.log("Added item to cart!")
 }
 

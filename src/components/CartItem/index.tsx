@@ -10,7 +10,7 @@ interface CarItemProps {
 const CartItem: React.FunctionComponent<CarItemProps> = ({ item }: CarItemProps) => {
   return (
     <div className="item">
-      <img className="thumbnail" src="https://i.imgur.com/MtjJNrk.jpg" alt="cart-img" />   
+      <img className="thumbnail" src={item.image} alt="cart-img" />   
       <div className="info">
         <p className="name">{item.name}</p>
         <p className="quantity">({item.quantity}) x ${item.price}</p>
