@@ -12,7 +12,7 @@ export const addCartItem = async (item: ProductInfo, quantity: number) => {
 	const existsIndex = newArr.findIndex(e => e.productId === item.id);
 
 	if (existsIndex === -1) {
-		newArr.push({ price: item.price, quantity, productId: item.id, image: item.image });
+		newArr.push({ price: item.price, quantity, productId: item.id, image: item.image, name: item.name });
 	}  else {
 		newArr[existsIndex].quantity += quantity;
 	}

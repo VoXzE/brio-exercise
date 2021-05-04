@@ -10,9 +10,40 @@
   display: flex;
   justify-content: flex-end;
 
-  .cart {
-    background: #fff;
-    width: 300px;
-    
+  .title {
+    margin: 0;
+    padding: 1rem;
   }
+  
+  .cart {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  .total {
+    margin: 0;
+    font-size: 20px;
+    padding: 1rem;  
+  }
+
+  .blue-btn {
+    margin: 1rem;
+  }
+
+  .cart-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .remove-btn {
+      border: none;
+      background: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
 }

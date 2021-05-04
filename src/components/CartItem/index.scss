@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  padding: 10px;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid lightgray;
+
+  .thumbnail {
+    height: 75px;
+  }
+
+  .name {
+    font-size: 18;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .quantity {
+    margin: 0;
+    padding: 0;
+  }
+
+}
