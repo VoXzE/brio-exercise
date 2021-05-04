@@ -22,6 +22,7 @@ const ProductPage = () => {
       <div className="qty-info">
         <p>Quantity</p>
         <QuantityInput value={quantity} increment={incrementQty} decrement={decrementQty} onChange={setQuantity} />
+        <button className="blue-btn">Add to Cart</button>
       </div>
       
     </div>
