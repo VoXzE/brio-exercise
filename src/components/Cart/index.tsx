@@ -1,5 +1,6 @@
 import { usePulse } from "pulse-framework";
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import core from "../../core";
 import CartItem from "../CartItem";
 import SubtotalBox from "../Subtotal";
@@ -32,7 +33,7 @@ const Cart: React.FunctionComponent = () => {
         </div>
 
         <SubtotalBox />
-        <button className="blue-btn">Checkout</button>
+        <Link to="/checkout"><button className="blue-btn">Checkout</button></Link>
        
       </div>
     </div>

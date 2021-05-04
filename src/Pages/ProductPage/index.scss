@@ -7,6 +7,9 @@
 
   .main-info {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     .thumbnail {
       max-height: 350px;
@@ -14,7 +17,10 @@
     }
 
     .description {
-      margin-left: 2rem;
+      flex: 1;
+      min-width: 300px;
+      padding: 2rem;
+      
     }
   }
 
