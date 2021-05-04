@@ -8,6 +8,11 @@ import "./index.scss";
 const CheckoutPage: React.FunctionComponent = () => {
   const cartItems = usePulse(core.controllers.cart.state.cart);
 
+  const handlePurchase = () => {
+    core.controllers.cart.state.cart.set([])
+    alert("Thank you for your purchase")
+  }
+
   return (
     <div className="checkout-page">
       <h1>Checkout</h1>
@@ -18,7 +23,7 @@ const CheckoutPage: React.FunctionComponent = () => {
       </div>
 
       <SubtotalBox />
-      <button className="purchase-btn">Purchase</button>
+      <button className="purchase-btn" onClick={handlePurchase}>Purchase</button>
     </div>
   );
 }
