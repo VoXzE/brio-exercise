@@ -1,0 +1,20 @@
+
+.product-page {
+  display: flex;
+  padding: 0 15%;
+  flex-direction: column;
+
+
+  .main-info {
+    display: flex;
+
+    .thumbnail {
+      max-width: 350px;
+      box-shadow: #a7a7a7 0px 0px 6px 2px;
+    }
+
+    .description {
+      margin-left: 2rem;
+    }
+  }
+}
