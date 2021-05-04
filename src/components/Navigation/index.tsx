@@ -6,7 +6,7 @@ import "./index.scss";
 const Navigation: React.FunctionComponent = () => {
   return (
     <div className="navigation">
-      <h1 className="logo">React Store</h1>
+      <Link to="/"><h1 className="logo">React Store</h1></Link>
       <ul className="nav-items">
         <li className="item">
           <Link to="/product/2b8c08ba-acfa-11eb-8529-0242ac130003">Product A</Link>

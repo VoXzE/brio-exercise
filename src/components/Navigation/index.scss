@@ -3,10 +3,13 @@
   padding: 10px 3rem;
   align-items: center;
   border-bottom: 2px solid lightgray;
+  
+  a { text-decoration: none; }
 
   .logo {
     margin: 0;
     padding: 0;
+    color: #000;
     font-size: 19px;
   }
 
@@ -24,7 +27,6 @@
       color: #6b6b6b;
       font-size: 18px;
       margin-right: 1rem;
-      text-decoration: none;
       border: none!important;
       
     }
