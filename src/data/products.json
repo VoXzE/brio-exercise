@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": "2b8c08ba-acfa-11eb-8529-0242ac130003",
+      "name": "Ketchup",
+      "price": 3.99,
+      "image": "https://i.imgur.com/MtjJNrk.jpg",
+      "description": "This is a ketchup container. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": "2b8c0b26-acfa-11eb-8529-0242ac130003",
+      "name": "Hot Sauce",
+      "price": 4.99,
+      "image": "https://i.imgur.com/r5Y0xpy.jpg",
+      "description": "This is a hot sauce container. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": "2b8c0c16-acfa-11eb-8529-0242ac130003",
+      "name": "Massive Peanut Butter Sauce",
+      "price": 9.99,
+      "image": "https://i.imgur.com/rAHYK89.jpg",
+      "description": "This is a massive peanut butter sauce container. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ]
+}
