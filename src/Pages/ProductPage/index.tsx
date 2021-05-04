@@ -22,7 +22,7 @@ const ProductPage: React.FunctionComponent = () => {
     }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [productId])
 
   return (
     <div className="product-page">

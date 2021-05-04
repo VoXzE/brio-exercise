@@ -22,9 +22,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navigation />
-      {showCart && <Cart />}
       <Router>
+        <Navigation />
+        {showCart && <Cart />}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/product/:productId" component={ProductPage} />

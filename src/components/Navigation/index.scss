@@ -20,11 +20,13 @@
     align-items: center;
     list-style-type: none;
   
-    .item {
+    .item, a {
       color: #6b6b6b;
       font-size: 18px;
       margin-right: 1rem;
+      text-decoration: none;
       border: none!important;
+      
     }
 
   }
